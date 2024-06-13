@@ -8,7 +8,7 @@ Simple system designed to handle user feedback efficiently. It allows users to s
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/feedback-management.git
+    git clone https://github.com/amitjimiwal/feedback-management.git
     cd feedback-management
     ```
 
