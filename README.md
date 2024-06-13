@@ -1,8 +1,8 @@
-# Feedback Management Project
+# Simple FeedBack Management
 
 ## Introduction
 
-The Feedback Management Project is a simple system designed to handle user feedback efficiently. It allows users to submit feedback, which is then stored in a in memory database.
+Simple system designed to handle user feedback efficiently. It allows users to submit feedback, which is then stored in a in memory database.
 
 ## Installation Steps
 
