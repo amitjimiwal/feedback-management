@@ -11,6 +11,7 @@ const addFeedBack = async (name: string, feedback: string) => {
           const data = await response.json();
           return data.success;
      } catch (error: any) {
+          console.log(error);
           console.error("Error adding feedback:", error.message);
      }
 };

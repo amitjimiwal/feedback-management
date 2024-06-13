@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import Feedback from "../lib/types/feedback.js";
 
 const getAllFeedbacks = async (req: Request, res: Response) => {
+     console.log(req.ip);
      try {
           res.status(200).json({
                success: true,
@@ -21,7 +22,7 @@ const getAllFeedbacks = async (req: Request, res: Response) => {
 const addNewFeedback = async (req: Request, res: Response) => {
      try {
           const feedback: Feedback = req.body;
-          if(!feedback.name || !feedback.feedback){
+          if (!feedback.name || !feedback.feedback) {
                throw new Error("Invalid payload");
           }
           feedbacks.push({ ...feedback, time: new Date() });
@@ -30,11 +31,11 @@ const addNewFeedback = async (req: Request, res: Response) => {
                message: "New feedback added",
                feedback: feedback
           });
-     } catch (error:any) {
+     } catch (error: any) {
           res.status(500).json({
                success: false,
                message: error.message,
           });
      }
 }
-export { getAllFeedbacks ,addNewFeedback};
+export { getAllFeedbacks, addNewFeedback };
