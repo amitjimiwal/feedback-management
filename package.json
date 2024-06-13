@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "depinstall": "cd backend && pnpm install && cd ../frontend && pnpm install",
+    "dev:backend":"cd backend && pnpm run dev",
+    "dev:frontend":"cd frontend && pnpm run dev",
+    "start:backend":"cd backend && pnpm run start",
+    "start:frontend":"cd frontend && pnpm run start"
   },
   "keywords": [],
   "author": "",
