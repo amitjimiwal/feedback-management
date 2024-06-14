@@ -10,7 +10,7 @@
 }
 .page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,12 +44,14 @@ input {
   border: 1px solid #777;
   border-radius: 10px;
 }
-
+.text{
+  color:black;
+}
 /* Feebacks */
 .container {
   padding: 0 5rem;
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 20px;
 }
 .feedback {
@@ -68,4 +70,10 @@ input {
 .feedback > p {
   font-size: 1em;
   color: #777;
+}
+/* Observer */
+.observer{
+  width: 100%;
+  height: 100px;
+  background-color: rebeccapurple;
 }
